@@ -17,18 +17,14 @@ print("success")
 $ pip freeze | grep grpcio
 grpcio==1.33.2
 grpcio-tools==1.33.2
-
 $ python example1.py 
 success
-```
 
-```
-(venv) $ pip install -U grpcio grpcio-tools
-(venv) $ pip freeze | grep grpcio
+$ pip install -U grpcio grpcio-tools
+$ pip freeze | grep grpcio
 grpcio==1.38.1
 grpcio-tools==1.38.1
-
-(venv) $ python example1.py 
+$ python example1.py 
 Traceback (most recent call last):
   File "/Users/a14737/sandbox/protoc-bug-report-proto-finder/example1.py", line 5, in <module>
     from foo import a_pb2_grpc
