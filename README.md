@@ -69,7 +69,7 @@ grpcio-tools==1.38.1
 success
 ```
 
-I think this is a regression bug which introduced by https://github.com/protocolbuffers/protobuf/pull/7470,
+I think this is a regression bug which introduced by https://github.com/grpc/grpc/pull/24993,
 and we need to import `grpc_tools.protoc` from the `grpc` package as in the previous version.
 
 ## Solution
