@@ -1,0 +1,20 @@
+syntax = 'proto3';
+
+package a;
+
+message FooMessage {
+  int64 aaa = 1;
+  string bbb = 2;
+}
+
+message FooRequest {
+  FooMessage foo = 1;
+}
+
+message FooResponse {
+  bool success = 1;
+}
+
+service FooService {
+  rpc foo (FooRequest) returns (FooResponse) {}
+}
