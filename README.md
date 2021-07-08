@@ -1,4 +1,4 @@
-# A regression bug report of grpc's Python library.
+# for https://github.com/grpc/grpc/issues/26631
 
 ## Problem Details
 
