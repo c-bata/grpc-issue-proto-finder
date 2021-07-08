@@ -74,6 +74,11 @@ and we need to import `grpc_tools.protoc` from the `grpc` package as in the prev
 
 ## Solution
 
+This problem will be resolved by the following patch:
+https://github.com/grpc/grpc/compare/master...c-bata:python-proto-finder?expand=1
+
+But I'm not sure if it is the correct solution.
+
 
 ## Related issues and pull requests.
 
