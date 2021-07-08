@@ -48,7 +48,7 @@ import a_pb2 as a__pb2   # ModuleNotFoundError is raised here!!!
 ```
 
 In `grpcio==1.33.2`, it won't raise an exception because `grpc_tools.protoc.ProtoFinder` is set on `sys.meta_path` at `import grpc`.
-But ProtoFinder is not at `grpcio==1.38.1` due to the change of https://github.com/protocolbuffers/protobuf/pull/7470.  If I explicitly imports `grpc_tools.protoc` before importing `a_pb2_grpc`, ModuleNotFoundError won't be raised.
+But ProtoFinder is not at `grpcio==1.38.1` due to the change of https://github.com/grpc/grpc/pull/24993.  If I explicitly imports `grpc_tools.protoc` before importing `a_pb2_grpc`, ModuleNotFoundError won't be raised.
 
 ```python
 # This works fine with grpcio==1.38.1 because this program explicitly imports
